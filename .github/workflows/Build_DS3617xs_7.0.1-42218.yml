@@ -1,5 +1,4 @@
-name: Build DS3617xs 7.0.1-42218
-
+name: Build DS3617xs 7.2 Kernel
 on:
   schedule:
     - cron: '0 18 * * *'
@@ -41,7 +40,7 @@ jobs:
           sudo apt-get install -y curl bspatch jq git
           git clone https://github.com/jumkey/redpill-load.git /home/runner/redpill-load
           wget https://raw.githubusercontent.com/Mr-jiangrj/Redpill_Build/main/ds3617xs_user_config.json -O /home/runner/redpill-load/ds3617xs_user_config.json
-          wget https://raw.githubusercontent.com/pocopico/rp-ext/main/redpill/releases/redpill-4.4.180plus-broadwell.tgz
+          wget https://github.com/pocopico/rp-ext/raw/main/redpill/releases/redpill-4.4.302plus-broadwell.tgz
           tar zxvf redpill-4.4.180plus-broadwell.tgz -C ./
           mv ./redpill.ko /home/runner/redpill-load/ext/rp-lkm/redpill-linux-v4.4.180+.ko
           
