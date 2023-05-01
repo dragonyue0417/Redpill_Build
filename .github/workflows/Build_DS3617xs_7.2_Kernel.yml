@@ -41,7 +41,7 @@ jobs:
           git clone https://github.com/jumkey/redpill-load.git /home/runner/redpill-load
           wget https://raw.githubusercontent.com/Mr-jiangrj/Redpill_Build/main/ds3617xs_user_config.json -O /home/runner/redpill-load/ds3617xs_user_config.json
           wget https://github.com/pocopico/rp-ext/raw/main/redpill/releases/redpill-4.4.302plus-broadwell.tgz
-          tar zxvf redpill-4.4.180plus-broadwell.tgz -C ./
+          tar zxvf redpill-4.4.302plus-broadwell.tgz -C ./
           mv ./redpill.ko /home/runner/redpill-load/ext/rp-lkm/redpill-linux-v4.4.180+.ko
           
       - name: 添加扩展驱动
