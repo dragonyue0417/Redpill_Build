@@ -1,4 +1,4 @@
-name: Build DS3622xs+ NEW Kernel
+name: Build DS3622xs+ 7.2 Kernel
 
 on:
   schedule:
